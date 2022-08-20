@@ -19,7 +19,7 @@ const WhySction = () => {
             <span>Fleet Management As A Service (FMAAS)</span>
           </div>
           <div className="item">
-            <CheckIcon className="icon" /> <span>Vehicle Financing</span>
+            <CheckIcon className="icon" /> <span>Vehicle Financing (B2C)</span>
           </div>
           {/* <div className='item'>
             <CheckIcon className='icon' /> <span>Driver Management</span>
