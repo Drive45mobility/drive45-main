@@ -22,6 +22,7 @@ const WhySction = () => {
           <div className="item">
             <CheckIcon className="icon" /> 
             <span>Vehicle Financing (B2C)</span>
+
           </div>
           {/* <div className='item'>
             <CheckIcon className='icon' /> <span>Driver Management</span>
