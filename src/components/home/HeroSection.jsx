@@ -171,7 +171,6 @@ const View = styled.section`
       margin-top: 20px;
 
       @media ${device.phone} {
-        align-items: center;
         width: 100%;
       }
 
