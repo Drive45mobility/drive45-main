@@ -11,35 +11,35 @@ const HeroSection = () => {
       <div className='image1'>
         <Image
           //   loader={myLoader}
-          src='/assets/car1.png'
-          alt='Picture of the author'
-          width={500}
-          height={500}
+          src='/assets/car003.png'
+          alt='Picture of a car'
+          width={520}
+          height={375}
         />
       </div>
       <div className='image2'>
         <Image
           //   loader={myLoader}
           src='/assets/car2.png'
-          alt='Picture of the author'
-          width={500}
-          height={500}
+          alt='Picture of a car'
+          width={520}
+          height={480}
         />
       </div>
       <div className='image1-mobile'>
         <Image
           //   loader={myLoader}
-          src='/assets/car1.png'
-          alt='Picture of the author'
-          width={160}
-          height={160}
+          src='/assets/car003.png'
+          alt='Picture of a car'
+          width={180}
+          height={140}
         />
       </div>
       <div className='image2-mobile'>
         <Image
           //   loader={myLoader}
           src='/assets/car2.png'
-          alt='Picture of the author'
+          alt='Picture of a car'
           width={200}
           height={200}
         />
@@ -171,6 +171,7 @@ const View = styled.section`
       margin-top: 20px;
 
       @media ${device.phone} {
+        align-items: center;
         width: 100%;
       }
 

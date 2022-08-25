@@ -11,7 +11,8 @@ const HeroSection = () => {
   return (
     <View>
       <img className="truck" src="/assets/car8.png" alt="truck" />
-      <img className="car" src="/assets/car9.png" alt="truck" />
+      <img className="lorry" src="/assets/car9.png" alt="truck" />
+      <img className="car" src="/assets/car-camry.png" alt="truck" />
       <div className="content">
         <div className="display">
           <h1>Our Services</h1>
@@ -19,75 +20,115 @@ const HeroSection = () => {
           <img src="/assets/car7.png" alt="" />
         </div>
 
-        <div className="row">
-          <h3>We have a wide range of services</h3>
-          <div className="box-view">
-            <div className="boxes">
-              <div className="box box1">
-                <CalendarIcon className="icon" />
-                <h3>Fleet Management</h3>
-                <p>
-                  Drive45 to take over and handle the management of existing
-                  customer owned fleet of cars and trucks.
-                </p>
-              </div>
-              <div className="box box2">
-                <CarsIcon className="icon" />
-                <h3>Fleet Liquidation</h3>
-                <p>
-                  Drive45 technicians are very proficient with the Evaluation
-                  and Liquidation of all mobile assets with a hassle free
-                  process.
-                </p>
-              </div>
-              <div className="box box3">
-                <SettingsIcon className="icon" />
-                <h3>Fleet Maintenance</h3>
-                <p>
-                  Drive45 to take over and handle the maintenance of existing
-                  customer owned fleet of cars and trucks.
-                </p>
-              </div>
-              <div className="box box4">
-                <HireIcon className="icon" />
-                <h3>Hire Purchase</h3>
-                <p>
-                  Stress free & flexible structured rent to own services for
-                  salary earners, with premium value-added services, built to
-                  eliminate the stress of mobility within the urban cities.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <h2> We have a wide range of services</h2>
+      
+      <div className="row">
+      <img className="star1" src="/assets/star1.png" alt="star" />
 
-        {/* <h2>Other Value Added Services...</h2>
-        <div className='row2'>
-          <div className='box'>
-            <div className='list'>
-              <div className='item item-left'>
-                <FlowerIcon />
-                <p>Fresh (new and used) units leased from Drive45</p>
-              </div>
-              <div className='item'>
-                <FlowerIcon />
-                <p>Sale and Lease -back</p>
-              </div>
-              <div className='item'>
-                <FlowerIcon />
-                <p>Inspection As A Service (IAAS)</p>
-              </div>
-              <div className='item'>
-                <FlowerIcon />
-                <p>Real Time Tracking & Telematics</p>
-              </div>
-              <div className='item'>
-                <FlowerIcon />
-                <p>Fresh units bought from Drive45 with financing</p>
-              </div>
-            </div>
-          </div>
-        </div> */}
+          <div className="box-view">          
+            <table>
+              <tr>
+                <td><CalendarIcon className="icon" /></td>
+                <td><h3> Vehicle Leasing (B2B)</h3></td>
+              </tr>
+            </table> 
+            
+            <p className="services1">
+            <ul>
+              <li>Contract based with tenor of 3-6 years</li>
+              <li>Access to vehicle brand of the client’s choosing</li>
+              <li>No cap to the number of vehicles to be leased</li>
+              <li>Zero down-payment on the vehicle</li>
+              <li>Fleet maintenance, insurance, tracker, documentation embedded in service</li>
+              <li>Brand new cars as well as pre-owned vehicles</li>
+            </ul>
+              </p>
+          </div> 
+     </div>
+
+
+
+
+
+
+
+
+
+
+     <div className="row">
+     <img className="star1" src="/assets/star2.png" alt="star" />
+
+          <div className="box-view2">          
+            <table className="table">
+              <tr>
+                <td><SettingsIcon className="nicon" /></td>
+                <td><h5> Fleet Management As A Service (FMAAS)</h5></td>
+              </tr>
+            </table> 
+            
+            <p className="services2">
+            <ul>
+              <li>Driver Sourcing & Management </li>
+              <li>Fleet liquidation </li>
+              <li>Fleet Maintenance </li>
+              <li>Fleet Inspection</li>
+              <li>Fleet Management System and Telematics technology service</li>
+            </ul>
+              </p>
+          </div> 
+     </div>
+
+       
+       
+
+
+
+
+
+
+
+
+
+     <div className="row">
+     <img className="star3" src="/assets/star3.png" alt="star" />
+
+          <div className="box-view3">          
+            <table>
+              <tr>
+                <td><HireIcon className="icon" /></td>
+                <td><h6> Vehicle Financing</h6></td>
+              </tr>
+            </table> 
+            
+            <p className="services1">
+            <ul>
+              <li>Ride Hailing Fleet Service </li>
+              <li>Vehicle Financing for individuals</li>
+            </ul>
+              </p>
+          </div> 
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
       </div>
     </View>
   );
@@ -107,29 +148,120 @@ const View = styled.section`
     margin-bottom: 200px;
   }
 
+
+
+  .services1{
+    width:75%;
+    font-size: 1.6rem;
+    font-weight: 400px;
+    line-height: 48.9px;
+    margin-top:20px;
+
+    @media ${device.phone} {
+      width: 100%;
+      font-size: 0.9rem;
+      line-height: 20px;
+    }
+  }
+
+  .services2{
+    width:100%;
+    font-size: 1.6rem;
+    font-weight: 400px;
+    line-height: 48.9px;
+    margin-top:20px;
+    padding-left: 450px;
+
+    @media ${device.phone} {
+      width: 100%;
+      font-size: 0.9rem;
+      line-height: 20px;
+      padding-left: 0px;
+    }
+  }
+
+  .table{
+  padding-left: 400px;
+
+  @media ${device.phone} {
+  padding-left: 0px
+
+  }
+}
+
+
   .truck {
     position: absolute;
     top: 900px;
-    left: 0;
+    right: 0;
     z-index: 2;
-    width: 700px;
+    width: 550px;
+    transform: scaleX(-1);
 
     @media ${device.phone} {
       top: 1350px;
+      width: 0px;
     }
   }
+
+
+  .lorry {
+    position: absolute;
+    top: 1600px;
+    left: 0;
+    z-index: 2;
+    width: 550px;
+    transform: scaleX(-1);
+
+    @media ${device.phone} {
+      top: 1350px;
+      width: 0px;
+    }
+  }
+
 
   .car {
     position: absolute;
     bottom: 0px;
-    right: -100px;
+    right: 0px;
     z-index: 2;
+    width: 500px;
+    transform: scaleX(-1);
+
 
     @media ${device.phone} {
-      bottom: -50px;
+      bottom: 0px;
       width: 250px;
     }
   }
+
+  .star1{
+    position: absolute;
+    width: 130px;
+    right: -30px;
+    top: -60px;
+
+    @media ${device.phone} {
+      width: 70px;
+      right: -25px;
+      top: -5px;
+    }
+  }
+
+  .star3{
+    position: absolute;
+    width: 130px;
+    left: -30px;
+    top: -60px;
+  
+    @media ${device.phone} {
+      width: 70px;
+      left: -25px;
+      top: -5px;
+    }
+  }
+
+
 
   .content {
     width: 1200px;
@@ -190,17 +322,55 @@ const View = styled.section`
       width: 100%;
       display: flex;
       align-items: flex-start;
-      margin-top: 300px;
+      margin-top: 120px;
+      position: relative;
 
       @media ${device.phone} {
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 50px;
       }
+    }
+     
 
       h3 {
-        font-size: 2rem;
-        font-weight: 400;
-        max-width: 290px;
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: #FFC500;
+        padding: 20px;
+       
+
+        @media ${device.phone} {
+          max-width: 100%;
+          text-align: center;
+          font-size: 1rem;
+          margin-bottom: 40px;
+        }
+      }
+
+
+      h5 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: #FF0101;
+        padding: 20px;
+       
+
+        @media ${device.phone} {
+          max-width: 100%;
+          text-align: center;
+          font-size: 1rem;
+          margin-bottom: 40px;
+        }
+      }
+      
+
+
+      h6 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: #00AC00;
+        padding: 20px;
+       
 
         @media ${device.phone} {
           max-width: 100%;
@@ -211,21 +381,72 @@ const View = styled.section`
       }
 
       .box-view {
-        width: 800px;
-        height: 820px;
-        background: #ffc500;
+        width: 100%;
+        height: 600px;
+        background: #FFF5D2;
         border-radius: 50.9338px;
-        margin-left: 40px;
+        margin-left: 0px;
         position: relative;
+        padding: 50px;
 
         @media ${device.phone} {
           width: 100%;
-          height: 1030px;
+          height: 400px;
           border-radius: 20px;
           margin-left: 0;
           margin-top: 30px;
+          padding: 20px;
+        }
+      }
+
+        .box-view2 {
+          width: 100%;
+          height: 550px;
+          background: #FFDBDB;
+          border-radius: 50.9338px;
+          margin-left: 0;
+          position: relative;
+          padding: 50px;
+  
+          @media ${device.phone} {
+            width: 100%;
+            height: 400px;
+            border-radius: 20px;
+            margin-left: 0;
+            margin-top: 30px;
+            padding: 20px;
+          }
         }
 
+
+        .box-view3 {
+          width: 100%;
+          height: 350px;
+          background: #D8FBD8;
+          border-radius: 50.9338px;
+          margin-left: 0;
+          position: relative;
+          padding: 50px;
+  
+          @media ${device.phone} {
+            width: 100%;
+            height: 400px;
+            border-radius: 20px;
+            margin-left: 0;
+            margin-top: 30px;
+            padding: 20px;
+          }
+        }
+
+        .nicon {
+          width: 200px;
+        @media ${device.phone} {
+          display: block;
+        }
+      }
+
+
+      
         .boxes {
           display: flex;
           width: 840px;
@@ -264,11 +485,13 @@ const View = styled.section`
               }
             }
 
-            h3 {
+            hunused3 {
               margin: 25px 0;
               font-size: 2.2rem;
               font-weight: 400;
+              font-color: #FFC500;
               line-height: 37.9px;
+
 
               @media ${device.phone} {
                 font-size: 1rem;
@@ -357,6 +580,10 @@ const View = styled.section`
             }
           }
 
+
+        
+
+
           .item-left {
             position: absolute;
             top: 0;
@@ -371,7 +598,7 @@ const View = styled.section`
       }
     }
 
-    h2 {
+    h2{
       font-size: 2.6rem;
       font-weight: 500;
       margin-top: 200px;
