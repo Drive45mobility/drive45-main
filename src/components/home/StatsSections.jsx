@@ -22,6 +22,9 @@ const StatsSction = () => {
           </div>
         </div>
 
+        <div className="image3">
+            <img src="/assets/Ellipse 85.png" />
+            </div>
         <div className="display-view">
           <div className="display">
             <div className="boxes">
@@ -41,6 +44,7 @@ const StatsSction = () => {
                 <p>VALUE OF ASSETS UNDER MANAGEMENT</p>
               </div>
             </div>
+          
 
             <div className="cta-view">
               <p>Contact Us:</p>
@@ -81,6 +85,8 @@ const View = styled.section`
     margin-bottom: 100px;
   }
 
+
+
   .image1 {
     position: absolute;
     bottom: 100px;
@@ -117,6 +123,29 @@ const View = styled.section`
       }
     }
   }
+
+
+  .image3 {
+    position: absolute;
+    bottom: 275px;
+    left: 400px;
+    
+    @media ${device.phone} {
+      bottom: 200px;
+    }
+
+    img {
+      width: 600px;
+      height: 600px;
+
+      @media ${device.phone} {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+
+
 
   .content {
     width: 1200px;
@@ -228,6 +257,10 @@ const View = styled.section`
             }
           }
         }
+
+
+
+
 
         .boxes {
           width: 100%;

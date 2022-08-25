@@ -12,14 +12,17 @@ const WhySction = () => {
       <div className="content">
         <div className="row">
           <div className="item">
-            <CheckIcon className="icon" /> <span>Vehicle Leasing (B2B)</span>
+            <CheckIcon className="icon" /> 
+            <span>Vehicle Leasing (B2B)</span>
           </div>
           <div className="item">
-            <CheckIcon className="icon" />{" "}
+            <CheckIcon className="icon" />
             <span>Fleet Management As A Service (FMAAS)</span>
           </div>
           <div className="item">
-            <CheckIcon className="icon" /> <span>Vehicle Financing (B2C)</span>
+            <CheckIcon className="icon" /> 
+            <span>Vehicle Financing (B2C)</span>
+
           </div>
           {/* <div className='item'>
             <CheckIcon className='icon' /> <span>Driver Management</span>
