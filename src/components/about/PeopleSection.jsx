@@ -17,7 +17,7 @@ const breakPoints2 = [
 const people = [
   {
     id: "1",
-    image: "/assets/people2.jpeg",
+    image: "/assets/people2.png",
     name: "Oluwaseyi Adefemi",
     role: "CO-FOUNDER & CEO",
   },
@@ -42,7 +42,7 @@ const people = [
   // },
   {
     id: "4",
-    image: "/assets/people5.jpeg",
+    image: "/assets/people5.jpg",
     name: "Ayodele Kadeba",
     role: "HEAD, OPERATIONS",
   },
