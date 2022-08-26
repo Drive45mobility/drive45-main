@@ -44,6 +44,8 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+        <img className="box-under" src="/assets/Vision.png" />
+
 
         <div className="row2">
           <div className="list">
@@ -73,6 +75,8 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+        <img className="box-under2" src="/assets/Mission.png" />
+
       </div>
     </View>
   );
@@ -81,6 +85,28 @@ const HeroSection = () => {
 export default HeroSection;
 
 const View = styled.section`
+ .box-under{
+   margin-top: -110px;
+   width: 620px;
+   z-index: -2;
+
+   @media ${device.phone} {
+    
+  }
+ }
+
+ .box-under2{
+  margin-left: 580px;
+  margin-top: -110px;
+  width: 620px;
+  z-index: -2;
+
+  @media ${device.phone} {
+   
+ }
+}
+
+
   width: 100vw;
   height: 100%;
   padding: 100px 0;
